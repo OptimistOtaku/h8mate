@@ -1,29 +1,103 @@
-# Create T3 App
+# H8Mate - Classmate Tier List Web App
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+## 📌 About the Project
+H8Mate is a **tier list ranking** web app built using the **T3 Stack** (Next.js, TypeScript, tRPC, TailwindCSS, and Prisma). It allows users to drag and drop classmates into different tiers for fun and interactive ranking.
 
-## What's next? How do I make an app with this?
+## 🚀 Features
+- **Drag-and-drop interface** for ranking classmates.
+- **Real-time updates** using React state.
+- **Interactive UI** with smooth animations.
+- **Deployed on Vercel** for easy access.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## 🛠️ Tech Stack
+- **Frontend**: Next.js, React, TypeScript, TailwindCSS
+- **Backend**: tRPC (no database for now)
+- **State Management**: React Hooks
+- **Deployment**: Vercel
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## 📂 Folder Structure
+```
+H8Mate/
+│── src/
+│   ├── app/
+│   │   ├── _components/
+│   │   │   ├── TierList.tsx
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   ├── server/
+│   │   ├── api/
+│   │   │   ├── root.ts
+│   ├── styles/
+│   │   ├── globals.css
+│── public/
+│── .env
+│── package.json
+│── README.md
+```
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## 🔧 Setup & Installation
+### 1️⃣ Clone the repository
+```sh
+git clone https://github.com/your-username/h8mate.git
+cd h8mate
+```
 
-## Learn More
+### 2️⃣ Install dependencies
+```sh
+pnpm install  # or npm install
+```
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+### 3️⃣ Setup environment variables
+Create a **.env** file and add placeholders:
+```sh
+AUTH_SECRET=placeholder_secret
+AUTH_DISCORD_ID=placeholder_discord_id
+AUTH_DISCORD_SECRET=placeholder_discord_secret
+DATABASE_URL=https://example.com
+NODE_ENV=development
+```
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+### 4️⃣ Run the development server
+```sh
+pnpm run dev  # or npm run dev
+```
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## 🚀 Deployment on Vercel
+### **Step 1: Push to GitHub**
+```sh
+git add .
+git commit -m "Initial commit"
+git push origin main
+```
 
-## How do I deploy this?
+### **Step 2: Deploy**
+1. Go to **[Vercel](https://vercel.com/)** and log in.
+2. Click **New Project** → Import your GitHub repo.
+3. Set environment variables in **Vercel Settings**.
+4. Click **Deploy** and wait for the build to complete.
+5. 🎉 Done! Your project is now live!
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## 🛠️ Troubleshooting
+### ❌ `Cannot find module '@trpc/react-query'`
+- Run: `pnpm install @trpc/react-query`
+
+### ❌ `Error: Command "pnpm run build" exited with 1`
+- Check your **environment variables** in `.env` or Vercel.
+
+### ❌ `Module not found: Can't resolve './styles/globals.css'`
+- Ensure `globals.css` exists inside `styles/` and is correctly imported.
+
+## 🎯 Future Improvements
+- Add a database for **saving rankings**.
+- Implement **authentication**.
+- Improve **UI/UX animations**.
+
+## 🤝 Contributing
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`
+3. Make your changes and commit: `git commit -m "Added new feature"`
+4. Push to GitHub and submit a Pull Request!
+
+## 📜 License
+MIT License © 2025 H8Mate Team
+
