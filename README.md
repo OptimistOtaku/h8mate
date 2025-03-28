@@ -59,38 +59,9 @@ NODE_ENV=development
 
 ### 4️⃣ Run the development server
 ```sh
-pnpm run dev  # or npm run dev
+pnpm run dev  
 ```
 
-## 🚀 Deployment on Vercel
-### **Step 1: Push to GitHub**
-```sh
-git add .
-git commit -m "Initial commit"
-git push origin main
-```
-
-### **Step 2: Deploy**
-1. Go to **[Vercel](https://vercel.com/)** and log in.
-2. Click **New Project** → Import your GitHub repo.
-3. Set environment variables in **Vercel Settings**.
-4. Click **Deploy** and wait for the build to complete.
-5. 🎉 Done! Your project is now live!
-
-## 🛠️ Troubleshooting
-### ❌ `Cannot find module '@trpc/react-query'`
-- Run: `pnpm install @trpc/react-query`
-
-### ❌ `Error: Command "pnpm run build" exited with 1`
-- Check your **environment variables** in `.env` or Vercel.
-
-### ❌ `Module not found: Can't resolve './styles/globals.css'`
-- Ensure `globals.css` exists inside `styles/` and is correctly imported.
-
-## 🎯 Future Improvements
-- Add a database for **saving rankings**.
-- Implement **authentication**.
-- Improve **UI/UX animations**.
 
 ## 🤝 Contributing
 1. Fork the repository.
